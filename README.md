@@ -16,6 +16,7 @@ O intuito deste projeto é criar um "bot" que fica monitorando as mensagens rece
 - [ ] Poder ouvir novamente a mesma mensagem
 - [ ] Se houver mídia tocando na máquina, abaixar o volume da mesma antes de executar o áudio
 - [ ] Persistir a sessão anterior, para que o usuário não precise ler o QR code toda vez que inicializar o programa
+- [ ] Utilizar docker
 
 ## Desenvolvimento
 - Rodar o script que baixa o geckodriver
