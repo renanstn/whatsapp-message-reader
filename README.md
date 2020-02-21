@@ -7,7 +7,8 @@ O intuito deste projeto é criar um "bot" que fica monitorando as mensagens rece
 ### Principais funcionalidades
 
 - [x] Monitorar as atividades no whatsapp web
-- [x] Detectar as mensagens novas e capturá-las
+- [x] Detectar as mensagens novas de um contato específico e capturá-las
+- [ ] Detectar as mensagens novas de **todos** os contatos e capturá-las
 - [ ] Ler a mensagem (usar a lib gtts)
 
 ### Opcionais
