@@ -9,6 +9,7 @@ O intuito deste projeto é criar um "bot" que fica monitorando as mensagens rece
 - [x] Monitorar as atividades no whatsapp web
 - [x] Detectar as mensagens novas de um contato específico e capturá-las
 - [ ] Detectar as mensagens novas de **todos** os contatos e capturá-las
+- [ ] No caso acima, sempre antes de ler a mensagem, ler o nome de quem a enviou
 - [ ] Ler a mensagem (usar a lib gtts)
 
 ### Opcionais

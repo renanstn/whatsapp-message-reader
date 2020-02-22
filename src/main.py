@@ -1,4 +1,5 @@
 import os
+import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -26,23 +27,30 @@ driver = get_chromedriver()
 driver.get(url)
 
 try:
-    WebDriverWait(driver, 60).until(
-        expected_conditions.presence_of_element_located((By.CLASS_NAME, 'message-in'))
+    # Aguardar a imagem de abertura do zap (class=_18W8t)
+    WebDriverWait(driver, 30).until(
+        expected_conditions.presence_of_element_located((By.CLASS_NAME, '_18W8t'))
     )
 
-    messages = driver.find_elements_by_class_name('message-in')
-    messages_count_a = len(messages)
-    messages_count_b = messages_count_a
+    print('zap conectado')
 
-    while True:
-        # Notificações de mensagens novas tem div com class '_1ZMSM'
-        messages = driver.find_elements_by_class_name('message-in')
-        messages_count_b = len(messages)
-        if messages_count_a != messages_count_b:
-            message = messages[-1]
-            print("Nova mensagem identificada!")
-            print(message.text)
-            messages_count_a = messages_count_b
+    primeira_mensagem = driver.find_element_by_class_name('X7YrQ')
+    primeira_mensagem.click()
+    time.sleep(10)
+
+    # messages = driver.find_elements_by_class_name('message-in')
+    # messages_count_a = len(messages)
+    # messages_count_b = messages_count_a
+
+    # while True:
+    #     # Notificações de mensagens novas tem span com class 'P6z4j'
+    #     messages = driver.find_elements_by_class_name('message-in')
+    #     messages_count_b = len(messages)
+    #     if messages_count_a != messages_count_b:
+    #         message = messages[-1]
+    #         print("Nova mensagem identificada!")
+    #         print(message.text)
+    #         messages_count_a = messages_count_b
 
 finally:
     driver.quit()
