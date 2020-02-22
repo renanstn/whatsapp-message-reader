@@ -136,3 +136,7 @@ dmypy.json
 
 # VS code
 .vscode/
+
+# Others
+bin/
+User_Data/
