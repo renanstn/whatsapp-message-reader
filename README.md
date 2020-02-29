@@ -1,16 +1,16 @@
 # Whatsapp Message Reader
 
-O intuito deste projeto é criar um "bot" que fica monitorando as mensagens recebinas pelo whatsapp, e, ao detectar mensagens novas, ele as **lê** para você, para que assim você não precise se distrair dando *alt+tab* nas suas abas.
+O intuito deste projeto é criar uma extensão do Chrome que fica monitorando as mensagens recebidas pelo whatsapp, e, ao detectar mensagens novas, ele as **lê** para você, para que assim você não precise se distrair dando *alt+tab* nas suas abas.
 
 ## Checklist de Tarefas
 
 ### Principais funcionalidades
 
-- [x] Monitorar as atividades no whatsapp web
-- [x] Detectar as mensagens novas de um contato específico e capturá-las
+- [ ] Monitorar as atividades no whatsapp web
+- [ ] Detectar as mensagens novas de um contato específico e capturá-las
 - [ ] Detectar as mensagens novas de **todos** os contatos e capturá-las
 - [ ] No caso acima, sempre antes de ler a mensagem, ler o nome de quem a enviou
-- [ ] Ler a mensagem (usar a lib gtts)
+- [ ] Ler a mensagem
 
 ### Opcionais
 
@@ -21,8 +21,3 @@ O intuito deste projeto é criar um "bot" que fica monitorando as mensagens rece
 - [ ] Utilizar docker
 
 ## Desenvolvimento
-- Rodar o script que baixa o geckodriver
-    - `sh get-geckodriver.sh`
-- Instalar dependências e iniciar o ambiente virtual
-    - `pipenv install`
-    - `pipenv shell`
