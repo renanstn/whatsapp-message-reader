@@ -1,0 +1,11 @@
+{
+    "name": "Whatsapp speaker",
+    "version": "1.0",
+    "description": "This extension monitors new messages on whatsapp, and reads them for you.",
+    "permissions": ["storage", "tts"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "manifest_version": 2
+}
